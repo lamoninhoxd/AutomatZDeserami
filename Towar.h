@@ -19,6 +19,6 @@ class Towar{
         void SetCena(double cena){ this->cena = cena; }
         string GetNazwa(){return nazwa;}
         double GetCena(){return cena;}
-        void Wypisz(){ cout<<t1.GetCena()<<endl<<t1.GetNazwa()<<endl; }
+        void Wypisz(){ cout<<GetCena()<<endl<<GetNazwa()<<endl; }
 
 };

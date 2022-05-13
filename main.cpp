@@ -7,11 +7,11 @@ using namespace std;
 
 int main(){
 
-	Towar t1("Lody", 10.59);
-	t1.Wypisz();
-	t1.SetNazwa("Lody");
-	t1.SetCena(10.59);
-	t1.Wypisz();
+	Towar t1("Lody", 10.69);
+	Paragon p1;
+	p1.DodajDoParagonu(t1.GetNazwa(), t1.GetCena());
+	cin.get();
+	p1.PodajParagon();
 	
     return 0;
 }
