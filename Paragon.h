@@ -20,12 +20,15 @@ class Paragon{
 			this->numerParagonu=rand()%899999999+100000000;
 			this->sumaCen=0.0;
 		}
+	//Funkcja regularnie aktualizująca łączną cenę
 		void SetsumaCen(double podanacena){ sumaCen += podanacena; }
+	//Funkcja dodająca towary, składniki i dodatki do paragonu
 		void DodajDoParagonu(string nazwa, double cena){ 
 			ParagonNazwy.push_back(nazwa);
 			ParagonCeny.push_back(cena);
 			this->SetsumaCen(cena);
 			}
+	//Funkcja drukująca paragon wraz z wszystkimi wybranymi przez użytkownika produktami
 		void PodajParagon(){
 			cout<<endl<<numerParagonu<<endl;
 			for(int i=0 ; i < ParagonCeny.size() ; i++){
