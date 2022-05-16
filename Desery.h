@@ -23,6 +23,7 @@ class Desery{
             this->nazwa = "default";
             this->cena = 0.00;
         }
+    //Funkcje dodające atrybuty klasy do vectorów
         void DodajWielkosc(string wielkosc){
             Wielkosc.push_back(wielkosc);
          }
@@ -38,6 +39,7 @@ class Desery{
             Sosy.push_back(nazwa);
             Sosy_Cena.push_back(cena);
         }
+    //Gettery i Settery
         void SetNazwa(string nazwa){ this->nazwa = nazwa;  }
         void SetCena(double cena){ this->cena = cena; }
         string GetNazwa(){return nazwa;}
@@ -49,6 +51,7 @@ class Desery{
         double GetSkladnikCena( int indeks ){ return Skladniki_Cena[indeks]; }
         string GetSos( int indeks ){ return Sosy[indeks]; }
         double GetSosCena( int indeks ){ return Sosy_Cena[indeks]; }
+    //Funkcja wypisująca zawartość obiektu klasy - głównie do testów
         void Wypisz(){ 
             cout<<GetCena()<<endl<<GetNazwa()<<endl; 
             int i=0;
