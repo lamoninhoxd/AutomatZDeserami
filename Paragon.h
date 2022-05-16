@@ -1,5 +1,7 @@
 #include <string>
 #include <vector>
+#include <stdlib.h>
+#include <time.h>
 
 using namespace std;
 
@@ -10,12 +12,12 @@ class Paragon{
 		vector<string> ParagonNazwy;
 		vector<double> ParagonCeny;
 	public:
-		Paragon(int numerParagonu, double sumaCen){
-			this->numerParagonu = numerParagonu;
+		Paragon(double sumaCen){
+			this->numerParagonu = rand()%899999999+100000000;
 			this->sumaCen = sumaCen;
 		}
 		Paragon(){
-			this->numerParagonu=0;
+			this->numerParagonu=rand()%899999999+100000000;
 			this->sumaCen=0.0;
 		}
 		void SetsumaCen(double podanacena){ sumaCen += podanacena; }
