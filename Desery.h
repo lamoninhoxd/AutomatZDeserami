@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "Paragon.h"
 using namespace std;
 
 class Desery{
@@ -90,7 +91,42 @@ class Desery{
                 cout<<i+1<<": "<<Dodatki[i]<<"    "<<Dodatki_Cena[i]<<endl;
             }
         }
+        void DoAutomatu(Paragon p1, Desery Deser){
+            int wybor;
+            int skladniki = 0;
+            p1.DodajDoParagonu(Deser.GetNazwa(), Deser.GetCena());
+			if(Deser.Wielkosc.size()!=0) { 
+                Deser.WypiszWielkosci(); 
+			    cin>>wybor;
+                p1.DodajDoParagonu(Deser.GetWielkosc(wybor-1), Deser.GetWielkoscCena(wybor-1));
+                if(wybor > 1 && Deser.GetNazwa().find("Lody") != string::npos){
+                    cout<<"Do wybranego rozmiaru można wybrać "<<wybor<<" smaków: "<<endl;
+                    Deser.WypiszSkladniki();
+                    int smaki=0;
+                    int dozwolone=wybor;
+                    do{
+                        cin>>wybor;
+                        p1.DodajDoParagonu(Deser.GetSkladnik(wybor-1), Deser.GetSkladnikCena(wybor-1));
+                        smaki++;
+                    }while(smaki < dozwolone);
+                }
+            }
+            if(Deser.Rodzaje.size()!=0){
+            Deser.WypiszRodzaje();
+			cin>>wybor;
+			p1.DodajDoParagonu(Deser.GetRodzaj(wybor-1), Deser.GetRodzajCena(wybor-1));
+            }
+            if(Deser.Dodatki.size()!=0){
+            cout<<"Do wybranego rodzaju deseru można dobrać 2 dodatki"<<endl;
+			cout<<"Wybierz '0' dla pominięcia wyboru"<<endl;
+			Deser.WypiszDodatki();
+			do{
+			cin>>wybor;
+			if(wybor==0) break;
+			p1.DodajDoParagonu(Deser.GetDodatki(wybor-1), Deser.GetDodatkiCena(wybor-1));
+			skladniki++;
+			}while(skladniki!=2);
+            }
+            p1.PodajParagon();
+        }
 };
-
-
-

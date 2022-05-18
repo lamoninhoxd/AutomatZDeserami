@@ -1,41 +1,75 @@
 #include <iostream>
 #include <string>
 #include "Desery.h"
-#include "Paragon.h"
+
 
 using namespace std;
 
 Desery LodywKubeczku("Lody w kubeczku", 2.99);
-Desery LodywWafelku("Lodu w wafelku", 2.50);
+Desery LodywWafelku("Lody w wafelku", 2.50);
 Desery LodywRozku("Rożek", 1.50);
 Desery Shake("Shake", 4.99);
+Desery Gofry("Gofry", 1.99);
+Desery KawaMrozona("Kawa mrożona", 4.99);
 Paragon p1;
 
 
 void DeklaracjaLodywKubku(){
-    LodywKubeczku.DodajWielkosc("Male", 0);
-	LodywKubeczku.DodajWielkosc("Srednie", 1);
-	LodywKubeczku.DodajWielkosc("Duze", 1.5);
+    LodywKubeczku.DodajWielkosc("Male - 1 gałka", 0);
+	LodywKubeczku.DodajWielkosc("Srednie - 2 gałki", 1);
+	LodywKubeczku.DodajWielkosc("Duze - 3 gałki", 1.5);
 	LodywKubeczku.DodajRodzaj("Vegan", 1);
 	LodywKubeczku.DodajRodzaj("Bez cukru", 0.5);
 	LodywKubeczku.DodajRodzaj("Bez laktozy", 1.5);
-	LodywKubeczku.DodajSkladniki("Oreo", 1);
-	LodywKubeczku.DodajSkladniki("Posypka lion", 1);
-	LodywKubeczku.DodajDodatki("Czekoladowy", 0);
-	LodywKubeczku.DodajDodatki("Karmelowy", 0);
+	LodywKubeczku.DodajRodzaj("Zwykłe", 0);
+	LodywKubeczku.DodajSkladniki("Czekoladowy", 0);
+	LodywKubeczku.DodajSkladniki("Truskawka", 0);
+	LodywKubeczku.DodajSkladniki("Wiśnia", 0);
+	LodywKubeczku.DodajSkladniki("Toffi", 0);
+	LodywKubeczku.DodajSkladniki("Tiramisu", 0);
+	LodywKubeczku.DodajSkladniki("Mix Jagodowy", 0);
+	LodywKubeczku.DodajSkladniki("Malina", 0);
+	LodywKubeczku.DodajSkladniki("Krówka", 0);
+	LodywKubeczku.DodajSkladniki("Karmel", 0);
+	LodywKubeczku.DodajSkladniki("Biała Czekolada", 0);
+	LodywKubeczku.DodajSkladniki("Adwokat", 0);
+	LodywKubeczku.DodajDodatki("Posypka KitKat", 1);
+	LodywKubeczku.DodajDodatki("Posypka Lion", 1);
+	LodywKubeczku.DodajDodatki("Posypka Smarties", 1);
+	LodywKubeczku.DodajDodatki("Oreo", 1);
+	LodywKubeczku.DodajDodatki("Polewa Ciemna czekolada", 1);
+	LodywKubeczku.DodajDodatki("Polewa Biała czekolada", 1);
+	LodywKubeczku.DodajDodatki("Orzeszki Archaidowe w karmelu", 1);
+	LodywKubeczku.DodajDodatki("Cukier strzelający", 1);
 }
 
 void DeklaracjaLodywWaflu(){
-	LodywWafelku.DodajWielkosc("Male", 0);
-	LodywWafelku.DodajWielkosc("Srednie", 1);
-	LodywWafelku.DodajWielkosc("Duze", 1.5);
+	LodywWafelku.DodajWielkosc("Male - 1 gałka", 0);
+	LodywWafelku.DodajWielkosc("Srednie - 2 gałki", 1);
+	LodywWafelku.DodajWielkosc("Duze - 3 gałki", 1.5);
 	LodywWafelku.DodajRodzaj("Vegan", 1);
 	LodywWafelku.DodajRodzaj("Bez cukru", 0.5);
 	LodywWafelku.DodajRodzaj("Bez laktozy", 1.5);
-	LodywWafelku.DodajSkladniki("Oreo", 1);
-	LodywWafelku.DodajSkladniki("Posypka lion", 1);
-	LodywWafelku.DodajDodatki("Czekoladowy", 0);
-	LodywWafelku.DodajDodatki("Karmelowy", 0);
+	LodywWafelku.DodajRodzaj("Zwykłe", 0);
+	LodywWafelku.DodajSkladniki("Czekoladowy", 0);
+	LodywWafelku.DodajSkladniki("Truskawka", 0);
+	LodywWafelku.DodajSkladniki("Wiśnia", 0);
+	LodywWafelku.DodajSkladniki("Toffi", 0);
+	LodywWafelku.DodajSkladniki("Tiramisu", 0);
+	LodywWafelku.DodajSkladniki("Mix Jagodowy", 0);
+	LodywWafelku.DodajSkladniki("Malina", 0);
+	LodywWafelku.DodajSkladniki("Krówka", 0);
+	LodywWafelku.DodajSkladniki("Karmel", 0);
+	LodywWafelku.DodajSkladniki("Biała Czekolada", 0);
+	LodywWafelku.DodajSkladniki("Adwokat", 0);
+	LodywWafelku.DodajDodatki("Posypka KitKat", 1);
+	LodywWafelku.DodajDodatki("Posypka Lion", 1);
+	LodywWafelku.DodajDodatki("Posypka Smarties", 1);
+	LodywWafelku.DodajDodatki("Oreo", 1);
+	LodywWafelku.DodajDodatki("Polewa Ciemna czekolada", 1);
+	LodywWafelku.DodajDodatki("Polewa Biała czekolada", 1);
+	LodywWafelku.DodajDodatki("Orzeszki Archaidowe w karmelu", 1);
+	LodywWafelku.DodajDodatki("Cukier strzelający", 1);
 }
 
 void DeklaracjaRozek(){
@@ -45,37 +79,81 @@ void DeklaracjaRozek(){
 	LodywRozku.DodajRodzaj("Vegan", 1);
 	LodywRozku.DodajRodzaj("Bez cukru", 0.5);
 	LodywRozku.DodajRodzaj("Bez laktozy", 1.5);
-	LodywRozku.DodajSkladniki("Oreo", 1);
-	LodywRozku.DodajSkladniki("Posypka lion", 1);
-	LodywRozku.DodajDodatki("Czekoladowy", 0);
-	LodywRozku.DodajDodatki("Karmelowy", 0);
+	LodywRozku.DodajRodzaj("Zwykłe", 0);
+	LodywRozku.DodajSkladniki("Czekoladowy", 0);
+	LodywRozku.DodajSkladniki("Truskawka", 0);
+	LodywRozku.DodajSkladniki("Wiśnia", 0);
+	LodywRozku.DodajSkladniki("Toffi", 0);
+	LodywRozku.DodajSkladniki("Tiramisu", 0);
+	LodywRozku.DodajSkladniki("Mix Jagodowy", 0);
+	LodywRozku.DodajSkladniki("Malina", 0);
+	LodywRozku.DodajSkladniki("Krówka", 0);
+	LodywRozku.DodajSkladniki("Karmel", 0);
+	LodywRozku.DodajSkladniki("Biała Czekolada", 0);
+	LodywRozku.DodajSkladniki("Adwokat", 0);
+	LodywRozku.DodajDodatki("Posypka KitKat", 1);
+	LodywRozku.DodajDodatki("Posypka Lion", 1);
+	LodywRozku.DodajDodatki("Posypka Smarties", 1);
+	LodywRozku.DodajDodatki("Oreo", 1);
+	LodywRozku.DodajDodatki("Polewa Ciemna czekolada", 1);
+	LodywRozku.DodajDodatki("Polewa Biała czekolada", 1);
+	LodywRozku.DodajDodatki("Orzeszki Archaidowe w karmelu", 1);
+	LodywRozku.DodajDodatki("Cukier strzelający", 1);
 }
 
 void DeklaracjaShake(){
 	Shake.DodajWielkosc("Maly", 0);
 	Shake.DodajWielkosc("Sredni", 1);
 	Shake.DodajWielkosc("Duzy", 1.5);
+	Shake.DodajSkladniki("Czekoladowy", 0);
+	Shake.DodajSkladniki("Truskawka", 0);
+	Shake.DodajSkladniki("Wiśnia", 0);
+	Shake.DodajSkladniki("Toffi", 0);
+	Shake.DodajSkladniki("Tiramisu", 0);
+	Shake.DodajSkladniki("Mix Jagodowy", 0);
+	Shake.DodajSkladniki("Malina", 0);
+	Shake.DodajSkladniki("Krówka", 0);
+	Shake.DodajSkladniki("Karmel", 0);
+	Shake.DodajSkladniki("Biała Czekolada", 0);
+	Shake.DodajSkladniki("Adwokat", 0);
 
+}
 
+void DeklaracjaGofry(){
+	Gofry.DodajWielkosc("Maly", 0);
+	Gofry.DodajWielkosc("Sredni", 1);
+	Gofry.DodajWielkosc("Duzy", 1.5);
+	Gofry.DodajDodatki("Bita Śmietana", 1);
+	Gofry.DodajDodatki("Cukier Puder", 0.5);
+	Gofry.DodajDodatki("Owoce", 1.5);
+}
+
+void DeklaracjaKawaMrozona(){
+	KawaMrozona.DodajWielkosc("Mała", 0);
+	KawaMrozona.DodajWielkosc("Średnia", 1);
+	KawaMrozona.DodajWielkosc("Duża", 1.5);
+}
+
+void Deklaracje(){
+	DeklaracjaLodywKubku();
+	DeklaracjaLodywWaflu();
+	DeklaracjaRozek();
+	DeklaracjaShake();
+	DeklaracjaGofry();
+	DeklaracjaKawaMrozona();
 }
 
 int main(){
 	srand(time(NULL));
-	DeklaracjaLodywKubku();
-	DeklaracjaLodywWaflu();
-	DeklaracjaRozek();
-	LodywKubeczku.Wypisz();
-
+	Deklaracje();
 	int wybor;
-
 	while(1){
-		int skladniki=0;
-
 	cout<<"==================Kawiarnia=================="<<endl;
 	cout<<"Proszę wybrać interesujący Państwa deser: "<<endl;
 	cout<<"1. Lody"<<endl;
 	cout<<"2. Shake"<<endl;
 	cout<<"3. Kawa Mrożona"<<endl;
+	cout<<"0. Wyjście"<<endl;
 	cin>>wybor;
 	switch(wybor){
 		case 1:
@@ -85,79 +163,22 @@ int main(){
 			cin>>wybor;
 			switch(wybor){
 				case 1:
-					p1.DodajDoParagonu(LodywKubeczku.GetNazwa(), LodywKubeczku.GetCena());
-					LodywKubeczku.WypiszWielkosci();
-					cin>>wybor;
-					p1.DodajDoParagonu(LodywKubeczku.GetWielkosc(wybor-1), LodywKubeczku.GetWielkoscCena(wybor-1));
-					LodywKubeczku.WypiszRodzaje();
-					cin>>wybor;
-					p1.DodajDoParagonu(LodywKubeczku.GetRodzaj(wybor-1), LodywKubeczku.GetRodzajCena(wybor-1));
-					cout<<"Do wybranego rodzaju lodów można dobrać 2 składniki"<<endl;
-					cout<<"Wybierz '0' dla pominięcia wyboru">>endl;
-					LodywKubeczku.WypiszSkladniki();
-					do{
-					cin>>wybor;
-					if(wybor==0) break;
-					p1.DodajDoParagonu(LodywKubeczku.GetSkladnik(wybor-1), LodywKubeczku.GetSkladnikCena(wybor-1));
-					skladniki++;
-					}while(skladniki!=2);
-					LodywKubeczku.WypiszDodatki();
-					cin>>wybor;
-					p1.DodajDoParagonu(LodywKubeczku.GetDodatki(wybor-1), LodywKubeczku.GetDodatkiCena(wybor-1));
+					LodywKubeczku.DoAutomatu(p1, LodywKubeczku);
 					break;
-
 				case 2:
-					p1.DodajDoParagonu(LodywRozku.GetNazwa(), LodywRozku.GetCena());
-					LodywRozku.WypiszWielkosci();
-					cin>>wybor;
-					p1.DodajDoParagonu(LodywRozku.GetWielkosc(wybor-1), LodywRozku.GetWielkoscCena(wybor-1));
-					LodywRozku.WypiszRodzaje();
-					cin>>wybor;
-					p1.DodajDoParagonu(LodywRozku.GetRodzaj(wybor-1), LodywRozku.GetRodzajCena(wybor-1));
-					cout<<"Do wybranego rodzaju lodów można dobrać 2 składniki"<<endl;
-					cout<<"Wybierz '0' dla pominięcia wyboru">>endl;
-					LodywRozku.WypiszSkladniki();
-					do{
-					cin>>wybor;
-					if(wybor==0) break;
-					p1.DodajDoParagonu(LodywRozku.GetSkladnik(wybor-1), LodywRozku.GetSkladnikCena(wybor-1));
-					skladniki++;
-					}while(skladniki!=2);
-					LodywRozku.WypiszDodatki();
-					cin>>wybor;
-					p1.DodajDoParagonu(LodywRozku.GetDodatki(wybor-1), LodywRozku.GetDodatkiCena(wybor-1));
+					LodywRozku.DoAutomatu(p1, LodywRozku);
 					break;
 
 				case 3:
-					p1.DodajDoParagonu(LodywWafelku.GetNazwa(), LodywWafelku.GetCena());
-					LodywWafelku.WypiszWielkosci();
-					cin>>wybor;
-					p1.DodajDoParagonu(LodywWafelku.GetWielkosc(wybor-1), LodywWafelku.GetWielkoscCena(wybor-1));
-					LodywWafelku.WypiszRodzaje();
-					cin>>wybor;
-					p1.DodajDoParagonu(LodywWafelku.GetRodzaj(wybor-1), LodywWafelku.GetRodzajCena(wybor-1));
-					cout<<"Do wybranego rodzaju lodów można dobrać 2 składniki"<<endl;
-					cout<<"Wybierz '0' dla pominięcia wyboru">>endl;
-					LodywWafelku.WypiszSkladniki();
-					do{
-					cin>>wybor;
-					if(wybor==0) break;
-					p1.DodajDoParagonu(LodywWafelku.GetSkladnik(wybor-1), LodywWafelku.GetSkladnikCena(wybor-1));
-					skladniki++;
-					}while(skladniki!=2);
-					LodywWafelku.WypiszDodatki();
-					cin>>wybor;
-					p1.DodajDoParagonu(LodywWafelku.GetDodatki(wybor-1), LodywWafelku.GetDodatkiCena(wybor-1));
+					LodywWafelku.DoAutomatu(p1, LodywWafelku);
 					break;
 			}
-		
-		
-		break;
+		case 2:
+			Shake.DoAutomatu(p1, Shake);
+			break;
+		case 0:
+			break;
 	}
-	p1.PodajParagon();
 	}
-	
-	
-	
     return 0;
 }
