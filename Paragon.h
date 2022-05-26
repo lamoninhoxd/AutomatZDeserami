@@ -33,7 +33,7 @@ class Paragon{
 			int wybor;
 			double kasa;
 			cout<<"--------------PARAGON--------------"<<endl;
-			cout<<endl<<numerParagonu<<endl;
+			cout<<endl<<"Numer Paragonu: "<<numerParagonu<<endl;
 			for(int i=0 ; i < ParagonCeny.size() ; i++){
 				cout<<endl<<i+1<<": "<<ParagonNazwy[i]<<"	"<<ParagonCeny[i]<<endl;
 			}

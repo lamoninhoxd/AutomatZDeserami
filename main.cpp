@@ -105,17 +105,17 @@ void DeklaracjaShake(){
 	Shake.DodajWielkosc("Maly", 0);
 	Shake.DodajWielkosc("Sredni", 1);
 	Shake.DodajWielkosc("Duzy", 1.5);
-	Shake.DodajSkladniki("Czekoladowy", 0);
-	Shake.DodajSkladniki("Truskawka", 0);
-	Shake.DodajSkladniki("Wiśnia", 0);
-	Shake.DodajSkladniki("Toffi", 0);
-	Shake.DodajSkladniki("Tiramisu", 0);
-	Shake.DodajSkladniki("Mix Jagodowy", 0);
-	Shake.DodajSkladniki("Malina", 0);
-	Shake.DodajSkladniki("Krówka", 0);
-	Shake.DodajSkladniki("Karmel", 0);
-	Shake.DodajSkladniki("Biała Czekolada", 0);
-	Shake.DodajSkladniki("Adwokat", 0);
+	Shake.DodajRodzaj("Czekoladowy", 0);
+	Shake.DodajRodzaj("Truskawka", 0);
+	Shake.DodajRodzaj("Wiśnia", 0);
+	Shake.DodajRodzaj("Toffi", 0);
+	Shake.DodajRodzaj("Tiramisu", 0);
+	Shake.DodajRodzaj("Mix Jagodowy", 0);
+	Shake.DodajRodzaj("Malina", 0);
+	Shake.DodajRodzaj("Krówka", 0);
+	Shake.DodajRodzaj("Karmel", 0);
+	Shake.DodajRodzaj("Biała Czekolada", 0);
+	Shake.DodajRodzaj("Adwokat", 0);
 
 }
 
@@ -153,8 +153,10 @@ int main(){
 	cout<<"1. Lody"<<endl;
 	cout<<"2. Shake"<<endl;
 	cout<<"3. Kawa Mrożona"<<endl;
+	cout<<"4. Gofry"<<endl;
 	cout<<"0. Wyjście"<<endl;
 	cin>>wybor;
+	if(wybor == 0) return 0;
 	switch(wybor){
 		case 1:
 			cout<<"1. "<<LodywKubeczku.GetNazwa()<<"	"<<LodywKubeczku.GetCena()<<endl;
@@ -173,12 +175,18 @@ int main(){
 					LodywWafelku.DoAutomatu(p1, LodywWafelku);
 					break;
 			}
+			break;
 		case 2:
 			Shake.DoAutomatu(p1, Shake);
 			break;
-		case 0:
+		case 3:
+			KawaMrozona.DoAutomatu(p1, KawaMrozona);
 			break;
+		case 4:
+			Gofry.DoAutomatu(p1, Gofry);
+			break;
+		
+		
+		}
 	}
-	}
-    return 0;
 }
