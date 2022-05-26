@@ -99,7 +99,7 @@ class Desery{
                 Deser.WypiszWielkosci(); 
 			    cin>>wybor;
                 p1.DodajDoParagonu(Deser.GetWielkosc(wybor-1), Deser.GetWielkoscCena(wybor-1));
-                if(wybor > 1 && Deser.GetNazwa().find("Lody") != string::npos){
+                if(Deser.GetNazwa().find("Lody") != string::npos){
                     cout<<"Do wybranego rozmiaru można wybrać "<<wybor<<" smaków: "<<endl;
                     Deser.WypiszSkladniki();
                     int smaki=0;
