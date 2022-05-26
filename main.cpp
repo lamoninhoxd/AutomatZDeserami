@@ -1,3 +1,12 @@
+/* AUTOMAT Z DESERAMI
+Współtworzyli:
+Damian Lamonski
+Mateusz Bień
+Szczepan Jakubowicz
+Wioletta Bochenek
+Paweł Sebastian
+*/
+
 #include <iostream>
 #include <string>
 #include "Desery.h"
